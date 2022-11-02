@@ -40,4 +40,4 @@
 
 ## Автор
 
-- Александр Сердюков [@Promolife](https://www.github.com/octokatherine)
+- Александр Сердюков [@Promolife](https://www.github.com/promolife)
