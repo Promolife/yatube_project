@@ -9,8 +9,8 @@ def index(request):
     title = 'Последние обновления на сайте'
     posts = Post.objects.order_by('-pub_date')[:10]
     context = {
-        'title' : title,
-        'posts' : posts,
+        'title': title,
+        'posts': posts,
     }
     return render(request, template, context)
 
@@ -23,7 +23,7 @@ def group_posts(request, slug):
     # Это аналог добавления
     # условия WHERE group_id = {group_id}
     posts = Post.objects.filter(group=group).order_by('-pub_date')[:10]
-    
+
     context = {
         'group': group,
         'posts': posts,
